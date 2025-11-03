@@ -35,7 +35,7 @@
 // DIM = 2 * N_PEN (non-autonomous), DIM = 2 * N_PEN + 1 (autonomous)
 enum {N_PEN = 8, SUB_PEN = N_PEN - 1, DIM = 2 * N_PEN, N_EQN = DIM + SQR(DIM)};
 
-enum {homo=1, dRandom, alternate, linear, sineWave, cosineWave, oddManOut, oddMenOut, altQuad, altLin};
+enum {homo=1, random, alternate, linear, impurity};
 enum {euler=1, RuKu4=4, RuKu5=5, RuKu45=45};
 
 /**********************************
@@ -130,7 +130,6 @@ double length[N_PEN];
 	// double lengthConcrete8[] = {-0.9171786598573886, -0.6968483735543598, -0.6787219230526584, -0.5674278557198684, 0.35209781545952484, 0.7621351560306098, 0.8244677200486106, 0.9214761206455304};
 	// above: sorted. below: unsorted.
 	double lengthConcrete8[] = {-0.6787219230526584, 0.7621351560306098, -0.9171786598573886, 0.35209781545952484, -0.5674278557198684, 0.9214761206455304, 0.8244677200486106, -0.6968483735543598};
-	// better lengths ? see John's email from 4 Sept 2024
 
 long numPendulums;						// current number of pendulums
 long subNum;							// numPendulums - 1

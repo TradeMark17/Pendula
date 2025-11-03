@@ -212,19 +212,12 @@ void ResetLengths(void)
 		switch (disorderType)
         {
 			case homo:			length[n] = avgLength;									break;
-			case dRandom:		length[n] = avgLength + amp*lengthConcrete8[n];         break;
+			case random:		length[n] = avgLength + amp*lengthConcrete8[n];         break;
 			case alternate:		if (n%2 == 0) length[n] = longest;
 								else length[n] = shortest;				        		break;
-			// case linear:		length[n] = shortest + 2.0*n*(amp / subNum);            break;
             case linear:        length[n] = avgLength - delta*(1.0 - 2.0*n/subNum);     break;
-			case sineWave:		length[n] = avgLength + amp*sin(freq*n);				break;
-			case cosineWave:	length[n] = avgLength - amp*cos(freq*n);				break;
-            case oddManOut:     if (n == 2) length[n] = avgLength + delta;
+            case impurity:      if (n == 2) length[n] = avgLength + delta;
                                 else length[n] = avgLength - delta/(subNum);            break;
-			case oddMenOut:		if (n==subNum || n==subNum-1 || n==0 || n==1) length[n] = longest;
-								else length[n] = avgLength;								break;
-			case altQuad:		length[n] = avgLength + (float) SQR(n)/SQR(numPendulums)*(2*(n%2)-1)*amp;	break;
-			case altLin:		length[n] = avgLength + (float) n/numPendulums*(2*(n%2)-1)*amp;	break;
 		}
 	}
 	
