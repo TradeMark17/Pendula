@@ -1,0 +1,59 @@
+"delta:"                0.64
+"kappa:"                300.0
+
+"disorderType:"         3
+"intMethod:"            45
+"randomizeInitCond:"    1
+
+"ifLoopKappa:"          0
+"ifLoopDelta:"          0
+"ifLogStepKappa:"       0
+"ifLogStepDelta:"       0
+
+"dtTry:"                0.001
+"dtMin:"                0.00000000001
+"dtMax:"                0.1
+"error:"                0.00005
+
+"dtPerPeriod:"          10000
+"nLyapTrans:"           128
+
+"tDiverge:"             200.0
+"nDiverge:"             2000
+"stepsPerRenorm:"       8200
+"numRenorms:"           3600
+"nLyapTrials:"          1
+
+"startDelta:"           0.00
+"endDelta:"             0.01
+"stepDelta:"            4
+
+"startKappa:"           0.01
+"endKappa:"             300.0000000000000568
+"stepKappa:"            400
+
+"avgLength:"            1.0
+"gama:"                 0.75
+"tau0:"                 0.7155
+"tau1:"                 0.4
+"omega:"                0.25
+
+"ifRankIsDelta:"        1
+
+
+
+// Line 4 (incl. blank lines): disorderType
+    1 = homo
+    2 = random
+    3 = alternate
+    4 = linear
+    5 = impurity
+// Line 5: intMethod
+    1 = euler
+    4 = RuKu4
+    5 = RuKu5
+    45 = RuKu45
+// Lines 6-11, 41:
+    0 = false, 1 = true
+
+// Line 27: startDelta (= delta + _), endDelta (= delta + _), stepDelta
