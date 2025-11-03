@@ -175,7 +175,7 @@ void GetRandomSeed(void)
 //--------------------------------------------------------------------
 void ResetPendulums(void)
 {		
-	nDt = 0;    // used in Euler and RK4 (unnecessary)
+	nDt = 0; // used in Euler and RK4 (unnecessary)
 	t = 0.0;
     dtTry = config_vars_lf[19]; // reset to init. value
 
