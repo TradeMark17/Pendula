@@ -212,7 +212,7 @@ void ResetLengths(void)
 		switch (disorderType)
         {
 			case homo:			length[n] = avgLength;									break;
-			case random:		length[n] = avgLength + amp*lengthConcrete8[n];         break;
+			case rrandom:		length[n] = avgLength + amp*lengthConcrete8[n];         break;
 			case alternate:		if (n%2 == 0) length[n] = longest;
 								else length[n] = shortest;				        		break;
             case linear:        length[n] = avgLength - delta*(1.0 - 2.0*n/subNum);     break;

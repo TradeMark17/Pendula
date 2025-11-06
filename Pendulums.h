@@ -35,7 +35,7 @@
 // DIM = 2 * N_PEN (non-autonomous), DIM = 2 * N_PEN + 1 (autonomous)
 enum {N_PEN = 8, SUB_PEN = N_PEN - 1, DIM = 2 * N_PEN, N_EQN = DIM + SQR(DIM)};
 
-enum {homo=1, random, alternate, linear, impurity};
+enum {homo=1, rrandom, alternate, linear, impurity};
 enum {euler=1, RuKu4=4, RuKu5=5, RuKu45=45};
 
 /**********************************

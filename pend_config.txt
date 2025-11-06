@@ -44,7 +44,7 @@
 
 // Line 4 (incl. blank lines): disorderType
     1 = homo
-    2 = random
+    2 = rrandom
     3 = alternate
     4 = linear
     5 = impurity
