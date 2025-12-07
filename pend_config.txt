@@ -1,25 +1,25 @@
 "delta:"                0.64
-"kappa:"                300.0
+"kappa:"                100.0
 
 "disorderType:"         3
 "intMethod:"            45
-"randomizeInitCond:"    1
+"randomizeInitCond:"    0
 
-"ifLoopKappa:"          0
-"ifLoopDelta:"          0
-"ifLogStepKappa:"       0
+"ifLoopKappa:"          1
+"ifLoopDelta:"          1
+"ifLogStepKappa:"       1
 "ifLogStepDelta:"       0
 
 "dtTry:"                0.001
-"dtMin:"                0.00000000001
-"dtMax:"                0.1
-"error:"                0.00005
+"dtMin:"                0.000000001
+"dtMax:"                0.01
+"error:"                0.0000005
 
 "dtPerPeriod:"          10000
-"nLyapTrans:"           128
+"nLyapTrans:"           0
 
-"tDiverge:"             200.0
-"nDiverge:"             2000
+"tDiverge:"             50.0
+"nDiverge:"             500
 "stepsPerRenorm:"       8200
 "numRenorms:"           3600
 "nLyapTrials:"          1
@@ -29,10 +29,10 @@
 "stepDelta:"            4
 
 "startKappa:"           0.01
-"endKappa:"             300.0000000000000568
+"endKappa:"             100.0
 "stepKappa:"            400
 
-"avgLength:"            1.0
+"avgLength:"            1.00
 "gama:"                 0.75
 "tau0:"                 0.7155
 "tau1:"                 0.4

@@ -26,30 +26,6 @@ int main(int argc, char *argv[])
              ifLoopDelta, &delta, startDelta, endDelta, stepDelta, ifLogStepDelta,
         AutoEvolveLyapunov);
     
-    // double allKappas[400];
-    // double currentKappa = startKappa;
-    // double four = stepKappa/size;
-    // double factor = pow(endKappa/startKappa, 1.0/(stepKappa-1.0));
-    // for (int i=0; i<stepKappa; i++)
-    // {
-    //     allKappas[i] = currentKappa;
-    //     currentKappa *= factor;
-    // }
-    // for (int i=0; i<four; i++)
-    // {
-    //     kappa = allKappas[4*rank + i];//each of the 100 nodes gets 4 kappas, each divided into 8 deltas
-    //     for (int d=0; d<8; d++)
-    //     {
-    //         oneDtErrorPerDelta = true;
-    //         delta = 0.98 + d*0.0025;
-    //         AutoEvolveLyapunov();
-    //     }
-    // }
-
-    // delta = missingDeltas[rank];
-    // kappa = missingKappas[rank];
-    // AutoEvolveLyapunov();
-    
 //--------------------------------------------------------------------
 	MPI_Barrier(MPI_COMM_WORLD);						// wait for all threads to reach this point (does this actually work?)
 	MPI_Finalize();										// end parallel environment
@@ -603,14 +579,6 @@ void AutoEvolveLyapunov()
 
     if (nLyapTrials == 1) printf("%.16lf\t %.16lf\t %.16lf\n", delta, kappa, lambdaMaxMean);
     else printf("%.16lf\t %d\t %.16lf\t %.16lf ± %.16lf\t %lf\t %lf\n", error, nDiverge, tDiverge, lambdaMaxMean, lambdaMaxSigma, delta, kappa);
-
-    // if (delta == 0.5 && kappa == 0.01)
-    // {
-    //     for (int i = 0; i < numPendulums; i++)
-    //     {
-    //         printf("Length of pend. %d = %.16lf\n", i+1, length[i]);
-    //     }
-    // }
 
 }//AutoEvolveLyapunov
 
