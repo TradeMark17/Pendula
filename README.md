@@ -1,4 +1,4 @@
-This repository is the only official companion code- and data-base for the upcoming Gallego et al. publication, Lyapunov landscape elucidates disorder-taming-chaos in arrays of coupled pendula, in Physics Letters A.
+This repository is the companion code- and data-base for the upcoming Gallego et al. publication, *Lyapunov landscape elucidates disorder-taming-chaos in arrays of coupled pendula*, in Physics Letters A.
 
 This repository contains:
   1. C-language code used to do all C-related simulation and data collection.
@@ -7,4 +7,4 @@ This repository contains:
 
 This repository does not contain:
   1. Wolfram-language code used to do all Wolfram-related simulation, analysis, and plotting. This is because the Wolfram codebase is complex, nonstandardized, and stored across many notebooks. It may be available upon request to the corresponding author.
-  2. Raw data for the other Figures (see previous). May be available upon request.
+  2. Raw data for the other Figures, for the same reasons. May be available upon request.
