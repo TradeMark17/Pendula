@@ -274,7 +274,7 @@ void LoopFunc(boolean ifLoop1, double *var1, double min1, double max1, int numSt
     else (*func)();
 
     /********************************
-    * STRUCTURE of LoopFunc()
+    * STRUCTURE of LoopFunc():
     * 
     *  loop 1st var?
     *      YES
