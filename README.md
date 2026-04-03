@@ -1,5 +1,5 @@
 # About
-Companion code- and data-base for the upcoming Gallego et al. publication, *Lyapunov landscape elucidates disorder-taming-chaos in arrays of coupled pendula*, in Physics Letters A.
+Companion code- and data-base for the Gallego et al. (2026) publication, *Lyapunov landscape elucidates disorder-taming-chaos in arrays of coupled pendula*.
 
 ---
 
